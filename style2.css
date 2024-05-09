@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Crete+Round:ital@0;1&family=Oranienbaum&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Crete Round", serif;
+    color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100vh;
+    font-size: 1.25rem;
+    cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="%23FFFFFF" width="20px" height="20px" viewBox="0 0 10.04 10.04"><circle cx="5.02" cy="5.02" r="4.52"/></svg>') 10 10, auto;
+    height: 100vh;
+}
+
+
+.split {
+    height: 50%;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+}
+
+.top {
+    top: 0;
+    background-color: rgb(0, 0, 0);
+}
+
+.bottom {
+    bottom: 0;
+    background-color: rgb(0, 0, 0);
+    overflow-y: hidden;
+}
+
+.textContainer {
+    top: 0;
+    height: 50vh;
+    width: 100vw;
+    outline: none;
+    overflow-y: scroll;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.keyboard {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 50vh;
+    width: 100vw;
+    padding-bottom: 20px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    color: rgb(255, 255, 255);
+    box-sizing: border-box;
+}
+
+.row {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.last {
+    width: 65%;
+    margin: 0 auto;
+}
+
+.space {
+    background: rgb(0, 0, 0);
+    border-color: white;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 5px;
+    width: 50%;
+    height: 2rem;
+}
+
+.space:active {
+    background-color: rgb(54, 54, 54);
+    border-radius: 3px;
+    width: 50%;
+    height: 2rem;
+    cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" fill="rgb(102, 168, 245)" stroke="%23FFFFFF" width="20px" height="20px" viewBox="0 0 10.04 10.04"><circle cx="5.02" cy="5.02" r="4.52"/></svg>') 10 10, auto;
+}
+
+.capslock {
+    padding: 0.25rem;
+    text-align: center;
+}
+
+.capslock:active {
+    background-color: rgb(54, 54, 54);
+    border-radius: 3px;
+    width: 6.5rem;
+    height: 2rem;
+    cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" fill="rgb(102, 168, 245)" stroke="%23FFFFFF" width="20px" height="20px" viewBox="0 0 10.04 10.04"><circle cx="5.02" cy="5.02" r="4.52"/></svg>') 10 10, auto;
+}
+
+.enter {
+    padding: 0.25rem;
+    text-align: center;
+}
+
+.enter:active {
+    background-color: rgb(54, 54, 54);
+    border-radius: 3px;
+    width: 6.5rem;
+    height: 2rem;
+    cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" fill="rgb(102, 168, 245)" stroke="%23FFFFFF" width="20px" height="20px" viewBox="0 0 10.04 10.04"><circle cx="5.02" cy="5.02" r="4.52"/></svg>') 10 10, auto;
+}
+
+.key {
+    padding: 0.25rem;
+    text-align: center;
+}
+
+.key:active {
+    background-color: rgb(54, 54, 54);
+    border-radius: 3px;
+    width: 2rem;
+    height: 2rem;
+    cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" fill="rgb(102, 168, 245)" stroke="%23FFFFFF" width="20px" height="20px" viewBox="0 0 10.04 10.04"><circle cx="5.02" cy="5.02" r="4.52"/></svg>') 10 10, auto;
+}
+
+.active {
+    background-color: rgb(54, 54, 54);
+    border-radius: 5px;
+}
+
+hr {
+    margin-left: 20px;
+    margin-right: 20px;
+}
